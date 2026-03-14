@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Speed Monitor",
+  "version": "1.0.0",
+  "description": "Show approximate current tab upload/download speed in tab title.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Tab Speed Monitor",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

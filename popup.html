@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tab Speed Monitor</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 14px;
+      width: 240px;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 10px 0;
+      font-size: 13px;
+    }
+
+    .field {
+      margin: 12px 0 8px 0;
+      font-size: 13px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px 8px;
+      font-size: 13px;
+    }
+
+    .hint {
+      margin-top: 4px;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .tip {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #0a7a34;
+      min-height: 16px;
+    }
+
+    .error {
+      color: #b42318;
+    }
+  </style>
+</head>
+<body>
+  <h1>标题显示设置</h1>
+
+  <label class="row">
+    <input type="checkbox" id="showDown" />
+    <span>显示下行速度</span>
+  </label>
+
+  <label class="row">
+    <input type="checkbox" id="showUp" />
+    <span>显示上行速度</span>
+  </label>
+
+  <div class="field">
+    <label for="pushIntervalMs">刷新间隔（毫秒）</label>
+    <input
+      id="pushIntervalMs"
+      type="number"
+      min="500"
+      max="10000"
+      step="100"
+      inputmode="numeric"
+      placeholder="1000"
+    />
+    <div class="hint">只允许整数，范围 500 ~ 10000</div>
+  </div>
+
+  <div class="tip">
+    示例：<br />
+    [↓12K ↑3K] / [↓12K] / [↑3K]
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
