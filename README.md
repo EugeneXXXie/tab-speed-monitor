@@ -1,4 +1,7 @@
 # Tab Speed Monitor
+![License: MIT](https://img.shields.io/badge/许可证-MIT-green.svg)
+![Version](https://img.shields.io/badge/版本-1.0.0-blue.svg)
+
 
 A Chrome / Chromium extension that shows the approximate upload and download speed of the currently active tab in the page title.
 
