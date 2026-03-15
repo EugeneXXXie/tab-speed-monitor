@@ -1,7 +1,7 @@
 # Tab Speed Monitor
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/Version-1.0.1-blue.svg)
 
 A Chrome / Chromium extension that shows the approximate Down / Up speed of the currently active tab in the page title.  
 一个用于 Chrome / Chromium 浏览器的扩展，用来在当前激活标签页的标题中显示近似的 Down / Up 速度。
