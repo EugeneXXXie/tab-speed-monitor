@@ -241,6 +241,8 @@ tab-speed-monitor/
 
 ## Settings | 设置项
 
+<img src="https://raw.githubusercontent.com/EugeneXXXie/imagesBase/master/tab-speed-monitor/settings.png">
+
 ### English
 
 The popup supports the following settings:

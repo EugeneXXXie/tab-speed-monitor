@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8" />
   <title>Tab Speed Monitor</title>
@@ -68,37 +69,37 @@
     .error {
       color: #b42318;
     }
+
+    .Unit {
+      padding: 0;
+      margin: 0;
+    }
   </style>
 </head>
+
 <body>
-  <h1>标题显示设置</h1>
+  <h1>TSM Settings</h1>
 
   <label class="row">
     <input type="checkbox" id="showDown" />
-    <span>显示下行速度</span>
+    <span>下行 / Down</span>
   </label>
 
   <label class="row">
     <input type="checkbox" id="showUp" />
-    <span>显示上行速度</span>
+    <span>上行 / Up</span>
   </label>
 
   <div class="field">
-    <label for="pushIntervalMs">刷新间隔（毫秒）</label>
-    <input
-      id="pushIntervalMs"
-      type="number"
-      min="500"
-      max="10000"
-      step="100"
-      inputmode="numeric"
-      placeholder="1000"
-    />
-    <div class="hint">只允许整数，范围 500 ~ 10000</div>
+    <label for="pushIntervalMs">刷新间隔 / Update Interval
+      <p class="Unit">(ms)</p>
+    </label>
+    <input id="pushIntervalMs" type="number" min="500" max="10000" step="100" inputmode="numeric" placeholder="1000" />
+    <div class="hint">500~10000</div>
   </div>
 
   <div class="tip">
-    示例：<br />
+    示例 / Example:<br />
     [↓12K ↑3K] / [↓12K] / [↑3K]
   </div>
 
@@ -106,4 +107,5 @@
 
   <script src="popup.js"></script>
 </body>
+
 </html>
