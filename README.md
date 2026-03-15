@@ -7,6 +7,10 @@ A Chrome / Chromium extension that shows the approximate upload and download spe
 
 一个用于 Chrome / Chromium 浏览器的扩展，用来在当前激活标签页的标题中显示近似的上下行速度。
 
+Sample/示例
+
+<img src="https://raw.githubusercontent.com/EugeneXXXie/imagesBase/master/tab-speed-monitor/tab-speed-monitor-sample.png">
+
 ---
 
 ## Repository Description
