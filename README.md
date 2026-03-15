@@ -1,6 +1,6 @@
 # Tab Speed Monitor
 
-<img src="https://raw.githubusercontent.com/EugeneXXXie/imagesBase/master/tab-speed-monitor/icon.png" alt="Icon" />
+<img src="https://raw.githubusercontent.com/EugeneXXXie/imagesBase/master/tab-speed-monitor/icon.png" alt="Icon" width="200px" />
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Version](https://img.shields.io/badge/Version-1.0.1-blue.svg)
